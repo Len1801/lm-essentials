@@ -1,0 +1,110 @@
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 4rem;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--gold-border);
+  transition: padding 0.3s, background 0.3s;
+
+  &.scrolled {
+    padding: 0.8rem 4rem;
+    background: rgba(10, 10, 10, 0.98);
+  }
+}
+
+.logo {
+  cursor: pointer;
+  .logo-letters {
+    font-family: var(--font-display);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1;
+    span { color: var(--gold); }
+  }
+  .logo-text {
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: var(--gray);
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+
+  a {
+    color: rgba(255,255,255,0.65);
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+    padding: 0.3rem 0;
+    border-bottom: 1px solid transparent;
+
+    &:hover {
+      color: var(--gold);
+      border-bottom-color: var(--gold);
+    }
+  }
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+
+  span {
+    display: block;
+    width: 24px;
+    height: 1px;
+    background: var(--white);
+    transition: all 0.3s;
+  }
+
+  &.open span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+  &.open span:nth-child(2) { opacity: 0; }
+  &.open span:nth-child(3) { transform: rotate(-45deg) translate(4px, -4px); }
+}
+
+@media (max-width: 768px) {
+  nav { padding: 1rem 1.5rem; }
+  nav.scrolled { padding: 0.8rem 1.5rem; }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    background: rgba(10,10,10,0.98);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--gold-border);
+
+    &.open { display: flex; }
+  }
+
+  .hamburger { display: flex; }
+  .btn-outline { display: none; }
+}

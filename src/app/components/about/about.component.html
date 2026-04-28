@@ -1,0 +1,21 @@
+<section class="about" id="about">
+  <div class="about-text">
+    <span class="section-label">{{ 'about.label' | translate }}</span>
+    <h2>{{ 'about.title' | translate }}</h2>
+    <p>{{ 'about.p1' | translate }}</p>
+    <p>{{ 'about.p2' | translate }}</p>
+    <div class="features">
+      <div class="feature" *ngFor="let f of features">
+        <div class="feature-title">{{ f.title | translate }}</div>
+        <div class="feature-desc">{{ f.desc | translate }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-visual">
+    <div class="quote-box">
+      <blockquote [innerHTML]="'about.quote' | translate"></blockquote>
+      <div class="quote-author">— LM Essentials</div>
+    </div>
+  </div>
+</section>

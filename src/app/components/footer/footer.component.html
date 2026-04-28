@@ -1,0 +1,38 @@
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo">L<span>M</span> Essentials</div>
+      <div class="tagline">Global Export Solutions</div>
+      <p>{{ 'footer.desc' | translate }}</p>
+    </div>
+    <div>
+      <div class="col-title">{{ 'footer.products' | translate }}</div>
+      <ul>
+        <li *ngFor="let p of products">
+          <a (click)="scrollTo('products')">{{ 'products.' + p + '.name' | translate }}</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="col-title">{{ 'footer.company' | translate }}</div>
+      <ul>
+        <li><a (click)="scrollTo('about')">{{ 'footer.about' | translate }}</a></li>
+        <li><a (click)="scrollTo('markets')">{{ 'footer.markets' | translate }}</a></li>
+        <li><a href="#">{{ 'footer.certifications' | translate }}</a></li>
+        <li><a href="#">{{ 'footer.partners' | translate }}</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="col-title">{{ 'footer.contact' | translate }}</div>
+      <ul>
+        <li><a href="mailto:info@lmessentials.com">info&#64;lmessentials.com</a></li>
+        <li><a href="#">WhatsApp Business</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ year }} LM Essentials. {{ 'footer.rights' | translate }}</span>
+    <div class="gold-line"></div>
+  </div>
+</footer>

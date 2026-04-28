@@ -1,0 +1,50 @@
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="section-label">{{ 'contact.label' | translate }}</span>
+    <h2>{{ 'contact.title' | translate }}</h2>
+    <p>{{ 'contact.subtitle' | translate }}</p>
+
+    <div class="success-msg" *ngIf="success">
+      ✅ {{ 'contact.success' | translate }}
+    </div>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="!success">
+      <div class="form-row">
+        <div class="form-group" [class.error]="isInvalid('name')">
+          <label>{{ 'contact.name' | translate }}</label>
+          <input type="text" formControlName="name" [placeholder]="'contact.namePlaceholder' | translate">
+        </div>
+        <div class="form-group" [class.error]="isInvalid('company')">
+          <label>{{ 'contact.company' | translate }}</label>
+          <input type="text" formControlName="company" [placeholder]="'contact.companyPlaceholder' | translate">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group" [class.error]="isInvalid('email')">
+          <label>{{ 'contact.email' | translate }}</label>
+          <input type="email" formControlName="email" placeholder="email@company.com">
+        </div>
+        <div class="form-group" [class.error]="isInvalid('country')">
+          <label>{{ 'contact.country' | translate }}</label>
+          <input type="text" formControlName="country" [placeholder]="'contact.countryPlaceholder' | translate">
+        </div>
+      </div>
+      <div class="form-group" [class.error]="isInvalid('category')">
+        <label>{{ 'contact.category' | translate }}</label>
+        <select formControlName="category">
+          <option value="">{{ 'contact.categoryPlaceholder' | translate }}</option>
+          <option *ngFor="let c of categories" [value]="c">
+            {{ 'products.' + c + '.name' | translate }}
+          </option>
+        </select>
+      </div>
+      <div class="form-group" [class.error]="isInvalid('message')">
+        <label>{{ 'contact.message' | translate }}</label>
+        <textarea formControlName="message" rows="5" [placeholder]="'contact.messagePlaceholder' | translate"></textarea>
+      </div>
+      <button type="submit" class="btn-primary" [disabled]="loading">
+        {{ loading ? ('contact.sending' | translate) : ('contact.send' | translate) }}
+      </button>
+    </form>
+  </div>
+</section>

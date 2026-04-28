@@ -1,0 +1,23 @@
+<nav [class.scrolled]="isScrolled">
+  <div class="logo" (click)="scrollTo('hero')">
+    <div class="logo-letters">L<span>M</span></div>
+    <div class="logo-text">Essentials</div>
+  </div>
+
+  <ul class="nav-links" [class.open]="menuOpen">
+    <li><a (click)="scrollTo('about')">{{ 'nav.about' | translate }}</a></li>
+    <li><a (click)="scrollTo('products')">{{ 'nav.products' | translate }}</a></li>
+    <li><a (click)="scrollTo('markets')">{{ 'nav.markets' | translate }}</a></li>
+    <li><a (click)="scrollTo('contact')">{{ 'nav.contact' | translate }}</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <app-language-switcher></app-language-switcher>
+    <button class="btn-outline" (click)="scrollTo('contact')">
+      {{ 'nav.cta' | translate }}
+    </button>
+    <button class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>

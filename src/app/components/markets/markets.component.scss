@@ -1,0 +1,20 @@
+.markets { padding: 6rem 4rem; background: var(--dark); }
+.markets-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 5rem; align-items: start; }
+h2 { font-size: clamp(2rem, 3vw, 3rem); margin-bottom: 1rem; }
+p { color: var(--gray); font-size: 14px; line-height: 1.8; margin-bottom: 2rem; font-weight: 300; }
+.regions { display: flex; flex-direction: column; gap: 1rem; }
+.region { display: flex; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid rgba(184,151,42,0.1); transition: all 0.3s; cursor: default;
+  &:hover { border-color: rgba(184,151,42,0.4); background: rgba(184,151,42,0.05); }
+}
+.flag { font-size: 1.3rem; min-width: 32px; }
+.region-name { font-size: 14px; font-weight: 500; }
+.region-desc { font-size: 12px; color: var(--gray); margin-top: 2px; }
+.map-visual { position: relative; background: var(--dark2); border: 1px solid var(--gold-border); padding: 2rem; display: flex; align-items: center; justify-content: center; min-height: 320px; }
+.map-dots { position: absolute; inset: 0; overflow: hidden; }
+.dot { position: absolute; width: 8px; height: 8px; background: var(--gold); border-radius: 50%; opacity: 0.7; animation: pulse 2s infinite;
+  &::after { content: ''; position: absolute; inset: -4px; border-radius: 50%; border: 1px solid var(--gold); opacity: 0.3; animation: pulse 2s infinite 0.5s; }
+}
+.map-center { text-align: center; position: relative; z-index: 1; }
+.map-icon { font-size: 3.5rem; opacity: 0.15; }
+.map-label { font-family: var(--font-display); font-size: 1.3rem; font-weight: 300; color: rgba(255,255,255,0.3); }
+@media (max-width: 768px) { .markets { padding: 4rem 1.5rem; } .markets-inner { grid-template-columns: 1fr; } }

@@ -1,0 +1,14 @@
+<section class="products" id="products">
+  <div class="section-header">
+    <span class="section-label">{{ 'products.label' | translate }}</span>
+    <h2 class="section-title">{{ 'products.title' | translate }}</h2>
+  </div>
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let p of products">
+      <span class="product-icon">{{ p.icon }}</span>
+      <div class="product-name">{{ 'products.' + p.key + '.name' | translate }}</div>
+      <div class="product-desc">{{ 'products.' + p.key + '.desc' | translate }}</div>
+      <div class="product-arrow">{{ 'products.explore' | translate }} →</div>
+    </div>
+  </div>
+</section>

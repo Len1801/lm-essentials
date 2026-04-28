@@ -1,0 +1,37 @@
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-line"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      <span>{{ 'hero.badge' | translate }}</span>
+    </div>
+
+    <h1>
+      {{ 'hero.title1' | translate }}<br>
+      {{ 'hero.title2' | translate }}<br>
+      {{ 'hero.title3' | translate }} <em>{{ 'hero.title4' | translate }}</em>
+    </h1>
+
+    <p class="hero-sub">{{ 'hero.subtitle' | translate }}</p>
+
+    <div class="hero-actions">
+      <button class="btn-primary" (click)="scrollTo('products')">
+        {{ 'hero.cta1' | translate }}
+      </button>
+      <button class="btn-text" (click)="scrollTo('about')">
+        {{ 'hero.cta2' | translate }} →
+      </button>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat" *ngFor="let s of stats">
+      <span class="stat-num">{{ s.num }}</span>
+      <span class="stat-label">{{ s.label | translate }}</span>
+    </div>
+  </div>
+</section>

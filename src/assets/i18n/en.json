@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "about": "About",
+    "products": "Products",
+    "markets": "Markets",
+    "contact": "Contact",
+    "cta": "Get a Quote"
+  },
+  "hero": {
+    "badge": "Premium Global Export",
+    "title1": "Connecting",
+    "title2": "the world",
+    "title3": "with the",
+    "title4": "essential",
+    "subtitle": "LM Essentials brings the finest products to market — technology, nutrition, beauty and more — delivered to every corner of the world where possible.",
+    "cta1": "View Catalogue",
+    "cta2": "Learn more",
+    "stats": {
+      "countries": "Countries",
+      "categories": "Categories",
+      "quality": "Quality"
+    }
+  },
+  "about": {
+    "label": "Who we are",
+    "title": "A company built to export without limits",
+    "p1": "At LM Essentials we believe the best products should have no borders. We specialize in exporting essential categories for modern life, with the highest quality standards and reliable logistics.",
+    "p2": "We work directly with selected manufacturers and distributors to ensure every product we export meets the most rigorous international standards.",
+    "quote": "\"Our mission is to be the <span>trusted bridge</span> between the world's finest products and the markets that need them.\"",
+    "features": {
+      "reliability": { "title": "Reliability", "desc": "Verified processes at every stage" },
+      "agility": { "title": "Agility", "desc": "Optimized delivery timelines" },
+      "variety": { "title": "Variety", "desc": "Multiple categories, one supplier" },
+      "support": { "title": "Support", "desc": "Personalized attention 24/7" }
+    }
+  },
+  "products": {
+    "label": "Our catalogue",
+    "title": "Export categories",
+    "explore": "Explore",
+    "tech": { "name": "Technology & IT", "desc": "Equipment, components, accessories and cutting-edge technology solutions for global markets." },
+    "electronics": { "name": "Consumer Electronics", "desc": "Electronic devices, gadgets and audio-video equipment with international warranty coverage." },
+    "nutrition": { "name": "Proteins & Nutrition", "desc": "Sports supplements, proteins and nutrition products certified under international standards." },
+    "perfumes": { "name": "Perfumes & Fragrances", "desc": "Exclusive fragrances and perfumery lines for luxury distributors and premium markets worldwide." },
+    "beauty": { "name": "Beauty & Personal Care", "desc": "Cosmetics, skincare and personal care products from globally recognized brands." },
+    "vitamins": { "name": "Vitamins & Health", "desc": "Vitamins, minerals and natural supplements under international quality certifications." },
+    "multiple": { "name": "Multiple categories", "desc": "" }
+  },
+  "markets": {
+    "label": "Global reach",
+    "title": "We export wherever the world allows",
+    "subtitle": "Our international distribution network allows us to reach the major markets of the Americas, Europe, Asia and beyond. If your country permits it, LM Essentials can get there.",
+    "presence": "International Presence",
+    "latam": { "name": "Latin America & the Caribbean", "desc": "Mexico, Colombia, Brazil, Argentina and more" },
+    "europe": { "name": "Europe", "desc": "Spain, Germany, France, Portugal and more" },
+    "asia": { "name": "Asia & Pacific", "desc": "Selected markets with favorable trade regulations" },
+    "north": { "name": "North America", "desc": "United States and Canada" }
+  },
+  "contact": {
+    "label": "Contact us",
+    "title": "Ready to export with us?",
+    "subtitle": "Tell us what you need and we'll provide a personalized quote. We work with importers, distributors and businesses from all over the world.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "company": "Company",
+    "companyPlaceholder": "Your company name",
+    "email": "Email",
+    "country": "Country",
+    "countryPlaceholder": "Your country",
+    "category": "Category of interest",
+    "categoryPlaceholder": "Select a category",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your business and what you need to import...",
+    "send": "Send Request",
+    "sending": "Sending...",
+    "success": "Message sent! We'll be in touch soon."
+  },
+  "footer": {
+    "desc": "Connecting global markets with premium quality essential products.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "about": "About us",
+    "markets": "Markets",
+    "certifications": "Certifications",
+    "partners": "Partners",
+    "rights": "All rights reserved."
+  }
+}
