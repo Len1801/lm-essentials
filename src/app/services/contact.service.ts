@@ -17,7 +17,7 @@ export class ContactService {
   // 1. Go to formspree.io and sign up free
   // 2. Create a new form → copy the ID (e.g. xpwzrqkb)
   // 3. Replace below: https://formspree.io/f/YOUR_FORMSPREE_ID
-  private formspreeUrl = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+  private formspreeUrl = 'https://formspree.io/f/xdayqgen';
 
   constructor(private http: HttpClient) {}
 
