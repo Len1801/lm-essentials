@@ -15,6 +15,10 @@ import { MarketsComponent } from './components/markets/markets.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
+import { ProcessComponent } from './components/process/process.component';
+import { WhyUsComponent } from './components/why-us/why-us.component';
+import { TestimonialsComponent } from './components/testimonials/testimonials.component';
+import { FaqComponent } from './components/faq/faq.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -30,7 +34,11 @@ export function HttpLoaderFactory(http: HttpClient) {
     MarketsComponent,
     ContactComponent,
     FooterComponent,
-    LanguageSwitcherComponent
+    LanguageSwitcherComponent,
+    ProcessComponent,
+    WhyUsComponent,
+    TestimonialsComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

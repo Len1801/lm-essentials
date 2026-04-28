@@ -1,0 +1,13 @@
+<section class="why-us" id="why-us">
+  <div class="section-header">
+    <span class="section-label">{{ 'whyUs.label' | translate }}</span>
+    <h2 class="section-title">{{ 'whyUs.title' | translate }}</h2>
+  </div>
+  <div class="reasons-grid">
+    <div class="reason" *ngFor="let r of reasons">
+      <div class="reason-icon">{{ r.icon }}</div>
+      <div class="reason-name">{{ 'whyUs.' + r.key + '.title' | translate }}</div>
+      <div class="reason-desc">{{ 'whyUs.' + r.key + '.desc' | translate }}</div>
+    </div>
+  </div>
+</section>

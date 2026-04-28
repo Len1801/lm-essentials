@@ -1,0 +1,18 @@
+<section class="process" id="process">
+  <div class="section-header">
+    <span class="section-label">{{ 'process.label' | translate }}</span>
+    <h2 class="section-title">{{ 'process.title' | translate }}</h2>
+  </div>
+
+  <div class="steps">
+    <div class="step" *ngFor="let s of steps; let last = last">
+      <div class="step-inner">
+        <div class="step-num">{{ s.num }}</div>
+        <div class="step-icon">{{ s.icon }}</div>
+        <div class="step-name">{{ 'process.' + s.key + '.title' | translate }}</div>
+        <div class="step-desc">{{ 'process.' + s.key + '.desc' | translate }}</div>
+      </div>
+      <div class="step-arrow" *ngIf="!last">→</div>
+    </div>
+  </div>
+</section>

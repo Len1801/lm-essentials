@@ -15,11 +15,7 @@
     "subtitle": "LM Essentials lleva los mejores productos del mercado — tecnología, nutrición, belleza y más — a cada rincón del mundo donde sea posible.",
     "cta1": "Ver catálogo",
     "cta2": "Conocer más",
-    "stats": {
-      "countries": "Países",
-      "categories": "Categorías",
-      "quality": "Calidad"
-    }
+    "stats": { "countries": "Países", "categories": "Categorías", "quality": "Calidad" }
   },
   "about": {
     "label": "Quiénes somos",
@@ -46,6 +42,24 @@
     "vitamins": { "name": "Vitaminas y Salud", "desc": "Vitaminas, minerales y suplementos naturales bajo certificaciones internacionales de calidad." },
     "multiple": { "name": "Múltiples categorías", "desc": "" }
   },
+  "process": {
+    "label": "Cómo funciona",
+    "title": "Nuestro proceso de exportación",
+    "quote": { "title": "Solicita una Cotización", "desc": "Cuéntanos qué necesitas. Analizamos tus requerimientos y preparamos una propuesta personalizada en 24 horas." },
+    "selection": { "title": "Selección de Productos", "desc": "Buscamos y verificamos los mejores productos de nuestra red confiable de fabricantes y distribuidores." },
+    "logistics": { "title": "Logística y Envío", "desc": "Manejamos toda la documentación de exportación, despacho aduanero y envío internacional a tu destino." },
+    "delivery": { "title": "Entrega y Soporte", "desc": "Tus productos llegan a tiempo y en perfectas condiciones. Hacemos seguimiento para garantizar tu satisfacción." }
+  },
+  "whyUs": {
+    "label": "Por qué elegirnos",
+    "title": "La ventaja LM Essentials",
+    "global": { "title": "Alcance Global", "desc": "Exportamos a más de 50 países en todos los continentes, donde las regulaciones lo permitan." },
+    "fast": { "title": "Respuesta Rápida", "desc": "Cotizaciones en 24 horas y tiempos de envío optimizados para cada destino." },
+    "quality": { "title": "Calidad Certificada", "desc": "Cada producto es verificado y cumple con los estándares internacionales de calidad y seguridad." },
+    "secure": { "title": "Transacciones Seguras", "desc": "Precios transparentes, métodos de pago seguros y documentación completa para cada pedido." },
+    "support": { "title": "Soporte 24/7", "desc": "Nuestro equipo está disponible las 24 horas para asistirte en cada etapa del proceso." },
+    "experience": { "title": "Experiencia Comprobada", "desc": "Años de experiencia en comercio internacional con una red creciente de clientes satisfechos." }
+  },
   "markets": {
     "label": "Alcance global",
     "title": "Exportamos a donde el mundo lo permite",
@@ -56,34 +70,37 @@
     "asia": { "name": "Asia y Pacífico", "desc": "Mercados seleccionados con regulaciones favorables" },
     "north": { "name": "Norte América", "desc": "Estados Unidos y Canadá" }
   },
+  "testimonials": {
+    "label": "Testimonios de clientes",
+    "title": "Lo que dicen nuestros socios"
+  },
+  "faq": {
+    "label": "Preguntas frecuentes",
+    "title": "Resolvemos tus dudas",
+    "q1": { "q": "¿A qué países exportan?", "a": "Exportamos a más de 50 países donde las regulaciones de importación lo permitan. Contáctanos con tu país y confirmamos disponibilidad de inmediato." },
+    "q2": { "q": "¿Cuál es la cantidad mínima de pedido?", "a": "Las cantidades mínimas varían según la categoría de producto. Trabajamos tanto con pequeños distribuidores como con grandes importadores — contáctanos para una cotización personalizada." },
+    "q3": { "q": "¿Cuánto tarda el envío internacional?", "a": "Los tiempos varían según el destino y el método. Normalmente 5-15 días hábiles por flete aéreo y 20-45 días por flete marítimo. Proporcionamos seguimiento para todos los envíos." },
+    "q4": { "q": "¿Manejan aduanas y documentación?", "a": "Sí. Manejamos toda la documentación de exportación incluyendo facturas comerciales, listas de empaque, certificados de origen y declaraciones aduaneras para tu país destino." },
+    "q5": { "q": "¿Qué métodos de pago aceptan?", "a": "Aceptamos transferencias internacionales (SWIFT), cartas de crédito y otros métodos de pago internacionales seguros. Los términos de pago se discuten durante el proceso de cotización." },
+    "q6": { "q": "¿Puedo solicitar muestras antes de hacer un pedido completo?", "a": "Sí, ofrecemos muestras para la mayoría de las categorías de productos. Los costos de las muestras y el envío se discuten caso por caso. Contáctanos para coordinar." }
+  },
   "contact": {
     "label": "Contáctanos",
     "title": "¿Listo para exportar con nosotros?",
     "subtitle": "Cuéntanos qué necesitas y te brindamos una cotización personalizada. Trabajamos con importadores, distribuidores y empresas de todo el mundo.",
-    "name": "Nombre",
-    "namePlaceholder": "Tu nombre",
-    "company": "Empresa",
-    "companyPlaceholder": "Nombre de tu empresa",
+    "name": "Nombre", "namePlaceholder": "Tu nombre",
+    "company": "Empresa", "companyPlaceholder": "Nombre de tu empresa",
     "email": "Email",
-    "country": "País",
-    "countryPlaceholder": "Tu país",
-    "category": "Categoría de interés",
-    "categoryPlaceholder": "Selecciona una categoría",
-    "message": "Mensaje",
-    "messagePlaceholder": "Cuéntanos sobre tu negocio y lo que necesitas importar...",
-    "send": "Enviar solicitud",
-    "sending": "Enviando...",
+    "country": "País", "countryPlaceholder": "Tu país",
+    "category": "Categoría de interés", "categoryPlaceholder": "Selecciona una categoría",
+    "message": "Mensaje", "messagePlaceholder": "Cuéntanos sobre tu negocio y lo que necesitas importar...",
+    "send": "Enviar solicitud", "sending": "Enviando...",
     "success": "¡Mensaje enviado! Nos pondremos en contacto pronto."
   },
   "footer": {
     "desc": "Conectando mercados globales con productos esenciales de calidad premium.",
-    "products": "Productos",
-    "company": "Empresa",
-    "contact": "Contacto",
-    "about": "Nosotros",
-    "markets": "Mercados",
-    "certifications": "Certificaciones",
-    "partners": "Socios",
+    "products": "Productos", "company": "Empresa", "contact": "Contacto",
+    "about": "Nosotros", "markets": "Mercados", "certifications": "Certificaciones", "partners": "Socios",
     "rights": "Todos los derechos reservados."
   }
 }

@@ -1,0 +1,19 @@
+<section class="faq" id="faq">
+  <div class="faq-inner">
+    <div class="section-header">
+      <span class="section-label">{{ 'faq.label' | translate }}</span>
+      <h2 class="section-title">{{ 'faq.title' | translate }}</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item" *ngFor="let f of faqs" [class.open]="f.open" (click)="toggle(f)">
+        <div class="faq-question">
+          <span>{{ 'faq.' + f.key + '.q' | translate }}</span>
+          <div class="faq-icon">{{ f.open ? '−' : '+' }}</div>
+        </div>
+        <div class="faq-answer" *ngIf="f.open">
+          {{ 'faq.' + f.key + '.a' | translate }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

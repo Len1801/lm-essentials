@@ -15,11 +15,7 @@
     "subtitle": "LM Essentials brings the finest products to market — technology, nutrition, beauty and more — delivered to every corner of the world where possible.",
     "cta1": "View Catalogue",
     "cta2": "Learn more",
-    "stats": {
-      "countries": "Countries",
-      "categories": "Categories",
-      "quality": "Quality"
-    }
+    "stats": { "countries": "Countries", "categories": "Categories", "quality": "Quality" }
   },
   "about": {
     "label": "Who we are",
@@ -46,6 +42,24 @@
     "vitamins": { "name": "Vitamins & Health", "desc": "Vitamins, minerals and natural supplements under international quality certifications." },
     "multiple": { "name": "Multiple categories", "desc": "" }
   },
+  "process": {
+    "label": "How it works",
+    "title": "Our export process",
+    "quote": { "title": "Request a Quote", "desc": "Tell us what you need. We'll analyze your requirements and prepare a personalized proposal within 24 hours." },
+    "selection": { "title": "Product Selection", "desc": "We source and verify the best products from our trusted network of manufacturers and distributors." },
+    "logistics": { "title": "Logistics & Shipping", "desc": "We handle all export documentation, customs clearance and international shipping to your destination." },
+    "delivery": { "title": "Delivery & Support", "desc": "Your products arrive on time and in perfect condition. We follow up to ensure your full satisfaction." }
+  },
+  "whyUs": {
+    "label": "Why choose us",
+    "title": "The LM Essentials advantage",
+    "global": { "title": "Global Reach", "desc": "We export to 50+ countries across all continents, wherever regulations allow." },
+    "fast": { "title": "Fast Turnaround", "desc": "Quotes within 24 hours and optimized shipping timelines for every destination." },
+    "quality": { "title": "Certified Quality", "desc": "Every product is verified and meets international quality and safety standards." },
+    "secure": { "title": "Secure Transactions", "desc": "Transparent pricing, secure payment methods and full documentation for every order." },
+    "support": { "title": "24/7 Support", "desc": "Our team is available around the clock to assist you at every stage of the process." },
+    "experience": { "title": "Proven Experience", "desc": "Years of experience in international trade with a growing network of satisfied clients." }
+  },
   "markets": {
     "label": "Global reach",
     "title": "We export wherever the world allows",
@@ -56,34 +70,37 @@
     "asia": { "name": "Asia & Pacific", "desc": "Selected markets with favorable trade regulations" },
     "north": { "name": "North America", "desc": "United States and Canada" }
   },
+  "testimonials": {
+    "label": "Client testimonials",
+    "title": "What our partners say"
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently asked questions",
+    "q1": { "q": "What countries do you export to?", "a": "We export to over 50 countries worldwide wherever import regulations permit. Contact us with your country and we'll confirm availability immediately." },
+    "q2": { "q": "What is the minimum order quantity?", "a": "Minimum order quantities vary by product category. We work with both small distributors and large importers — contact us for a customized quote." },
+    "q3": { "q": "How long does international shipping take?", "a": "Shipping times vary by destination and method. Typically 5-15 business days for air freight and 20-45 days for sea freight. We provide tracking for all shipments." },
+    "q4": { "q": "Do you handle customs and documentation?", "a": "Yes. We handle all export documentation including commercial invoices, packing lists, certificates of origin and customs declarations for your destination country." },
+    "q5": { "q": "What payment methods do you accept?", "a": "We accept international wire transfers (SWIFT), letters of credit and other secure international payment methods. Payment terms are discussed during the quoting process." },
+    "q6": { "q": "Can I request samples before placing a full order?", "a": "Yes, we offer samples for most product categories. Sample costs and shipping are discussed on a case-by-case basis. Contact us to arrange." }
+  },
   "contact": {
     "label": "Contact us",
     "title": "Ready to export with us?",
     "subtitle": "Tell us what you need and we'll provide a personalized quote. We work with importers, distributors and businesses from all over the world.",
-    "name": "Name",
-    "namePlaceholder": "Your name",
-    "company": "Company",
-    "companyPlaceholder": "Your company name",
+    "name": "Name", "namePlaceholder": "Your name",
+    "company": "Company", "companyPlaceholder": "Your company name",
     "email": "Email",
-    "country": "Country",
-    "countryPlaceholder": "Your country",
-    "category": "Category of interest",
-    "categoryPlaceholder": "Select a category",
-    "message": "Message",
-    "messagePlaceholder": "Tell us about your business and what you need to import...",
-    "send": "Send Request",
-    "sending": "Sending...",
+    "country": "Country", "countryPlaceholder": "Your country",
+    "category": "Category of interest", "categoryPlaceholder": "Select a category",
+    "message": "Message", "messagePlaceholder": "Tell us about your business and what you need to import...",
+    "send": "Send Request", "sending": "Sending...",
     "success": "Message sent! We'll be in touch soon."
   },
   "footer": {
     "desc": "Connecting global markets with premium quality essential products.",
-    "products": "Products",
-    "company": "Company",
-    "contact": "Contact",
-    "about": "About us",
-    "markets": "Markets",
-    "certifications": "Certifications",
-    "partners": "Partners",
+    "products": "Products", "company": "Company", "contact": "Contact",
+    "about": "About us", "markets": "Markets", "certifications": "Certifications", "partners": "Partners",
     "rights": "All rights reserved."
   }
 }

@@ -1,0 +1,19 @@
+<section class="testimonials" id="testimonials">
+  <div class="section-header">
+    <span class="section-label">{{ 'testimonials.label' | translate }}</span>
+    <h2 class="section-title">{{ 'testimonials.title' | translate }}</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial" *ngFor="let t of testimonials">
+      <div class="stars">★★★★★</div>
+      <blockquote>"{{ t.quote }}"</blockquote>
+      <div class="author">
+        <div class="avatar">{{ t.initials }}</div>
+        <div>
+          <div class="author-name">{{ t.name }}</div>
+          <div class="author-role">{{ t.role }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
