@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "ng serve",
-    "build": "ng build --configuration production && xcopy /E /Y dist\\lm-essentials\\browser\\* dist\\lm-essentials\\",
+    "build":"ng build --configuration production",
     "test": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint"
   },
