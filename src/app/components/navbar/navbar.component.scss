@@ -22,17 +22,15 @@ nav {
   display: flex;
   align-items: center;
 
-  .logo-img {
-    height: 52px;
-    width: auto;
-    filter: brightness(0) invert(1);
-    transition: filter 0.3s;
+ .logo-img {
+  height: 52px;
+  width: auto;
+  filter: none;
+  transition: opacity 0.3s;
 
-    &:hover {
-      filter: brightness(0) saturate(100%) invert(68%) sepia(45%) saturate(500%) hue-rotate(5deg) brightness(90%);
-    }
+  &:hover { opacity: 0.8; } }
   }
-}
+
 
 .nav-links {
   display: flex;
