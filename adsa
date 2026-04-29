@@ -1,0 +1,24 @@
+[33ma56fda2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m fix: revert logo to white filter
+[33m507cfb4[m fix: transparent logo
+[33mf9b41c8[m fix: logo filter for dark navbar
+[33m4b7f6e9[m feat: transparent logo and favicon
+[33md8f621a[m fix logo 2.0
+[33m9d239ea[m fix: show original logo colors
+[33mf383ae0[m fix: restore build script
+[33m89c4878[m fix: use xcopy for Windows build
+[33m79bbdcf[m fix: copy browser files to dist root
+[33mbd80f81[m fix: output to public folder
+[33m3588af4[m fix: vercel builds config
+[33m85d160e[m fix: add outputDirectory to vercel.json
+[33m432dd37[m fix: vercel config
+[33m21ac71c[m feat: connect Formspree contact form 1.1
+[33mbdf72a2[m feat: custom favicon LM Essentials
+[33m4923203[m feat: logo, process, why-us, testimonials, FAQ, SEO
+[33m16e72f0[m fix: force browser output folder
+[33md21d355[m fix: revert to working state
+[33m6ac4292[m fix: revert vercel config
+[33m54ba83f[m fix: simplify vercel config
+[33m60a8422[m fix: vercel output directory
+[33m21539d6[m fix: output path for Vercel
+[33m95c2784[m first commit
+[33m787c437[m feat: LM Essentials website - Angular + bilingüe EN/ES
