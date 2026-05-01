@@ -1,6 +1,4 @@
-// about.component.ts
 import { Component } from '@angular/core';
-import { trigger, animate, style, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-about',
