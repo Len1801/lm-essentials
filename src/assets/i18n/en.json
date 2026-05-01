@@ -63,8 +63,14 @@
   "markets": {
     "label": "Global reach",
     "title": "We export wherever the world allows",
-    "subtitle": "Our international distribution network allows us to reach the major markets of the Americas, Europe, Asia and beyond. If your country permits it, LM Essentials can get there.",
+    "subtitle": "Our international distribution network allows us to reach the major markets of the Americas, Europe, Asia and beyond.",
     "presence": "International Presence",
+    "stats": {
+      "countries": { "label": "Countries", "desc": "Active export destinations worldwide" },
+      "continents": { "label": "Continents", "desc": "Americas, Europe, Asia & beyond" },
+      "categories": { "label": "Categories", "desc": "Tech, beauty, nutrition & more" },
+      "quality": { "label": "Quality", "desc": "International certified products" }
+    },
     "latam": { "name": "Latin America & the Caribbean", "desc": "Mexico, Colombia, Brazil, Argentina and more" },
     "europe": { "name": "Europe", "desc": "Spain, Germany, France, Portugal and more" },
     "asia": { "name": "Asia & Pacific", "desc": "Selected markets with favorable trade regulations" },

@@ -1,32 +1,27 @@
 <section class="markets" id="markets">
-  <div class="markets-inner">
-    <div class="markets-text">
-      <span class="section-label">{{ 'markets.label' | translate }}</span>
-      <h2>{{ 'markets.title' | translate }}</h2>
-      <p>{{ 'markets.subtitle' | translate }}</p>
-      <div class="regions">
-        <div class="region" *ngFor="let r of regions">
-          <span class="flag">{{ r.flag }}</span>
-          <div>
-            <div class="region-name">{{ 'markets.' + r.key + '.name' | translate }}</div>
-            <div class="region-desc">{{ 'markets.' + r.key + '.desc' | translate }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="section-header">
+    <span class="section-label">{{ 'markets.label' | translate }}</span>
+    <h2 class="section-title">{{ 'markets.title' | translate }}</h2>
+  </div>
 
-    <div class="map-visual">
-      <div class="map-dots">
-        <div class="dot"
-             *ngFor="let d of dots"
-             [style.top]="d.top"
-             [style.left]="d.left"
-             [style.animation-delay]="d.delay">
-        </div>
-      </div>
-      <div class="map-center">
-        <div class="map-icon">🌐</div>
-        <div class="map-label">{{ 'markets.presence' | translate }}</div>
+  <!-- Stats Grid -->
+  <div class="stats-grid">
+    <div class="stat-card" *ngFor="let s of stats; let i = index">
+      <span class="stat-num">{{ displayValues[i] }}{{ s.suffix }}</span>
+      <div class="stat-label-text">{{ 'markets.stats.' + s.key + '.label' | translate }}</div>
+      <div class="stat-desc">{{ 'markets.stats.' + s.key + '.desc' | translate }}</div>
+    </div>
+  </div>
+
+  <div class="gold-divider"></div>
+
+  <!-- Regions -->
+  <div class="regions-grid">
+    <div class="region-card" *ngFor="let r of regions">
+      <span class="flag">{{ r.flag }}</span>
+      <div>
+        <div class="region-name">{{ 'markets.' + r.key + '.name' | translate }}</div>
+        <div class="region-desc">{{ 'markets.' + r.key + '.desc' | translate }}</div>
       </div>
     </div>
   </div>

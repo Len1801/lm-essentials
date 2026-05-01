@@ -1,12 +1,21 @@
-// markets.component.ts
-import { Component } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-markets',
   templateUrl: './markets.component.html',
   styleUrls: ['./markets.component.scss']
 })
-export class MarketsComponent {
+export class MarketsComponent implements OnInit {
+
+  stats = [
+    { target: 50, suffix: '+', key: 'countries' },
+    { target: 4, suffix: '', key: 'continents' },
+    { target: 6, suffix: '', key: 'categories' },
+    { target: 100, suffix: '%', key: 'quality' }
+  ];
+
+  displayValues = [0, 0, 0, 0];
+
   regions = [
     { flag: '🌎', key: 'latam' },
     { flag: '🌍', key: 'europe' },
@@ -14,13 +23,38 @@ export class MarketsComponent {
     { flag: '🌐', key: 'north' }
   ];
 
-  dots = [
-    { top: '40%', left: '25%', delay: '0s' },
-    { top: '55%', left: '35%', delay: '.3s' },
-    { top: '35%', left: '48%', delay: '.6s' },
-    { top: '30%', left: '65%', delay: '.9s' },
-    { top: '50%', left: '72%', delay: '1.2s' },
-    { top: '25%', left: '20%', delay: '1.5s' },
-    { top: '60%', left: '55%', delay: '.4s' }
-  ];
+  ngOnInit(): void {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animateCounters();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.3 });
+
+    setTimeout(() => {
+      const el = document.getElementById('markets');
+      if (el) observer.observe(el);
+    }, 100);
+  }
+
+  animateCounters(): void {
+    const duration = 1500;
+    const start = performance.now();
+
+    const update = (now: number) => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const ease = 1 - Math.pow(1 - progress, 3);
+
+      this.stats.forEach((stat, i) => {
+        this.displayValues[i] = Math.round(ease * stat.target);
+      });
+
+      if (progress < 1) requestAnimationFrame(update);
+    };
+
+    requestAnimationFrame(update);
+  }
 }
