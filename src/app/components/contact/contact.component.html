@@ -4,7 +4,7 @@
     <h2>{{ 'contact.title' | translate }}</h2>
     <p>{{ 'contact.subtitle' | translate }}</p>
 
-    <form [formGroup]="form" (ngSubmit)="onSubmit()"
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
       <div class="form-row">
         <div class="form-group" [class.error]="isInvalid('name')">
           <label>{{ 'contact.name' | translate }}</label>
