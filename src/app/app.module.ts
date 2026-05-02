@@ -6,7 +6,11 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { ThankYouComponent } from './components/thank-you/thank-you.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { AboutComponent } from './components/about/about.component';
@@ -27,6 +31,9 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    ThankYouComponent,
+    NotFoundComponent,
     NavbarComponent,
     HeroComponent,
     AboutComponent,
@@ -43,6 +50,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
     TranslateModule.forRoot({

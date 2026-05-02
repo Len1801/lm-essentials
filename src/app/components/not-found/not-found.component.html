@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+
+<section class="not-found">
+  <div class="not-found-bg" aria-hidden="true">404</div>
+
+  <div class="not-found-inner">
+    <span class="section-label">{{ 'notFound.badge' | translate }}</span>
+
+    <h1>
+      {{ 'notFound.title1' | translate }}
+      <em>{{ 'notFound.title2' | translate }}</em>
+    </h1>
+
+    <p class="subtitle">{{ 'notFound.subtitle' | translate }}</p>
+
+    <a routerLink="/" class="btn-primary">{{ 'notFound.cta' | translate }}</a>
+
+    <div class="not-found-links">
+      <span class="links-label">{{ 'notFound.linksLabel' | translate }}</span>
+      <nav>
+        <a href="/#about">{{ 'nav.about' | translate }}</a>
+        <span class="sep">◆</span>
+        <a href="/#products">{{ 'nav.products' | translate }}</a>
+        <span class="sep">◆</span>
+        <a href="/#markets">{{ 'nav.markets' | translate }}</a>
+        <span class="sep">◆</span>
+        <a href="/#contact">{{ 'nav.contact' | translate }}</a>
+      </nav>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

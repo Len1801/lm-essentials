@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { ContactService } from '../../services/contact.service';
 
 @Component({
@@ -11,11 +12,10 @@ export class ContactComponent {
   form: FormGroup;
   submitted = false;
   loading = false;
-  success = false;
 
   categories = ['tech', 'electronics', 'nutrition', 'perfumes', 'beauty', 'vitamins', 'multiple'];
 
-  constructor(private fb: FormBuilder, private contactService: ContactService) {
+  constructor(private fb: FormBuilder, private contactService: ContactService, private router: Router) {
     this.form = this.fb.group({
       name:     ['', [Validators.required, Validators.minLength(2)]],
       company:  ['', Validators.required],
@@ -32,7 +32,7 @@ export class ContactComponent {
 
     this.loading = true;
     this.contactService.sendMessage(this.form.value).subscribe({
-      next: () => { this.success = true; this.loading = false; this.form.reset(); this.submitted = false; },
+      next: () => { this.router.navigate(['/thank-you']); },
       error: () => { this.loading = false; }
     });
   }

@@ -103,6 +103,21 @@
     "send": "Send Request", "sending": "Sending...",
     "success": "Message sent! We'll be in touch soon."
   },
+  "notFound": {
+    "badge": "Page not found",
+    "title1": "This page has gone",
+    "title2": "missing",
+    "subtitle": "The page you're looking for doesn't exist or may have been moved. Let us guide you back.",
+    "cta": "Back to Home",
+    "linksLabel": "Explore our site"
+  },
+  "thankYou": {
+    "label": "Message received",
+    "title": "Thank you!",
+    "subtitle": "We've received your message and will be in touch shortly.",
+    "desc": "One of our team members will review your inquiry and respond within 24 hours.",
+    "cta": "Back to Home"
+  },
   "footer": {
     "desc": "Connecting global markets with premium quality essential products.",
     "products": "Products", "company": "Company", "contact": "Contact",

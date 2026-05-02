@@ -103,6 +103,21 @@
     "send": "Enviar solicitud", "sending": "Enviando...",
     "success": "¡Mensaje enviado! Nos pondremos en contacto pronto."
   },
+  "notFound": {
+    "badge": "Página no encontrada",
+    "title1": "Esta página ha",
+    "title2": "desaparecido",
+    "subtitle": "La página que buscas no existe o fue movida. Permítenos llevarte de regreso.",
+    "cta": "Volver al inicio",
+    "linksLabel": "Explorar el sitio"
+  },
+  "thankYou": {
+    "label": "Mensaje recibido",
+    "title": "¡Gracias!",
+    "subtitle": "Hemos recibido tu mensaje y nos pondremos en contacto pronto.",
+    "desc": "Uno de nuestros representantes revisará tu solicitud y responderá en menos de 24 horas.",
+    "cta": "Volver al inicio"
+  },
   "footer": {
     "desc": "Conectando mercados globales con productos esenciales de calidad premium.",
     "products": "Productos", "company": "Empresa", "contact": "Contacto",

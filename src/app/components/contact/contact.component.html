@@ -4,11 +4,7 @@
     <h2>{{ 'contact.title' | translate }}</h2>
     <p>{{ 'contact.subtitle' | translate }}</p>
 
-    <div class="success-msg" *ngIf="success">
-      ✅ {{ 'contact.success' | translate }}
-    </div>
-
-    <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="!success">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()"
       <div class="form-row">
         <div class="form-group" [class.error]="isInvalid('name')">
           <label>{{ 'contact.name' | translate }}</label>
